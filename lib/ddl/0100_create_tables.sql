@@ -12,8 +12,8 @@
 /*================================================================================*/
 
 CREATE TABLE `AUT_PAGE_TAB` (
-  `ptb_id` TINYINT AUTO_INCREMENT NOT NULL,
-  `wrd_id` SMALLINT NOT NULL,
+  `ptb_id` TINYINT UNSIGNED AUTO_INCREMENT NOT NULL,
+  `wrd_id` SMALLINT UNSIGNED NOT NULL,
   `ptb_label` VARCHAR(30) CHARACTER SET ascii COLLATE ascii_general_ci NOT NULL,
   CONSTRAINT `PRIMARY_KEY` PRIMARY KEY (`ptb_id`)
 );
@@ -24,10 +24,10 @@ COMMENT ON TABLE `AUT_PAGE_TAB`
 */
 
 CREATE TABLE `ABC_AUTH_PAGE` (
-  `pag_id` SMALLINT AUTO_INCREMENT NOT NULL,
-  `pag_id_org` SMALLINT,
-  `ptb_id` TINYINT,
-  `wrd_id` SMALLINT NOT NULL,
+  `pag_id` SMALLINT UNSIGNED AUTO_INCREMENT NOT NULL,
+  `pag_id_org` SMALLINT UNSIGNED,
+  `ptb_id` TINYINT UNSIGNED,
+  `wrd_id` SMALLINT UNSIGNED NOT NULL,
   `pag_alias` VARCHAR(32),
   `pag_class` VARCHAR(128) NOT NULL,
   `pag_label` VARCHAR(128) CHARACTER SET ascii COLLATE ascii_general_ci,
@@ -76,8 +76,8 @@ COMMENT ON COLUMN `ABC_AUTH_PAGE`.`pag_weight`
 */
 
 CREATE TABLE `ABC_AUTH_PAGE_COMPANY` (
-  `pag_id` SMALLINT NOT NULL,
-  `cmp_id` SMALLINT NOT NULL,
+  `pag_id` SMALLINT UNSIGNED NOT NULL,
+  `cmp_id` SMALLINT UNSIGNED NOT NULL,
   `pag_class` VARCHAR(128) NOT NULL,
   CONSTRAINT `PK_ABC_AUTH_PAGE_COMPANY` PRIMARY KEY (`pag_id`, `cmp_id`)
 );
