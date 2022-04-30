@@ -1,0 +1,10 @@
+{
+  "name": "plaisio/db-page",
+  "description": "PhpPlaisio: Database Page",
+  "keywords": [
+    "PhpPlaisio",
+    "Database",
+    "Page"
+  ],
+  "license": "MIT"
+}
