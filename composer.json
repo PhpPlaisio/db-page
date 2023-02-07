@@ -6,5 +6,8 @@
     "Database",
     "Page"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "require": {
+    "plaisio/console-stratum": "^1.0.0"
+  }
 }
